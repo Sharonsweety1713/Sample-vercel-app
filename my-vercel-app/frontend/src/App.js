@@ -4,8 +4,7 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    fetch('https://sample-vercel-app-kz3l.vercel.app/api/message
-')
+    fetch('https://sample-vercel-app-kz3l.vercel.app/api/message')
       .then((res) => res.json())
       .then((data) => setMessage(data.message))
       .catch(() => setMessage('Failed to fetch'));
@@ -20,5 +19,6 @@ function App() {
 }
 
 export default App;
+
 
 
